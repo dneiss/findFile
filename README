@@ -1,0 +1,10 @@
+This is a Python program to find a specific file in all version of a git repository. This should find all matching files (for instance, if filename changed but contents are same) and in _any_ path in the repo.
+
+Invoke as follows:
+
+findFile.py repoPath filePath
+
+Uses the gitPython module. To install that "sudo pip install gitpython --upgrade"
+
+
+It does this by doing a rev-list from HEAD (could change this to an --all or specific refs) searching for the file SHA. 
